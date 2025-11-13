@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "欧迪精英房间自动加入",
+  "version": "1.0.0",
+  "description": "自动搜索并加入或创建'欧迪精英'房间",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://www.alang.run/*", "https://www.alang.run/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
